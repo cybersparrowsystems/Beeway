@@ -7,7 +7,7 @@
 // -------- Replace with your credentials --------
 #define WIFI_SSID "YOUR_SSID"              // Replace with your WiFi SSID
 #define WIFI_PASSWORD "YOUR_PASSWORD"      // Replace with your WiFi Password
-#define BOT_TOKEN "XXXXXXXXX:XXXXXXXXXXXXXXXXX" // Telegram BOT Token
+#define BOT_TOKEN "XXXXXXXXX:XXXXXXXXXXXXXXXXXXX" // Telegram BOT Token
 #define CHAT_ID "YOUR_CHAT_ID"            // Replace with your chat ID
 // -----------------------------------------------
 
