@@ -90,7 +90,7 @@ void setup() {
   }
   Serial.println("\nWiFi connected. IP Address: " + WiFi.localIP().toString());
 
-  configTime(0, 0, "pool.ntp.org");       // Synchronize time for secure connection
+  configTime(0, 0, "pool.ntp.org");       
   while (time(nullptr) < 24 * 3600) delay(100);
 
   bot.sendMessage(CHAT_ID, "ESP32-CAM Telegram Bot started!", "");
