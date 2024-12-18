@@ -21,7 +21,7 @@ UniversalTelegramBot bot(BOT_TOKEN, secured_client);
 
 camera_fb_t *fb = NULL;                   // Camera buffer
 bool flashState = LOW;                    // Flash state control
-bool dataAvailable = false;               // Used for binary transfer of the image
+bool dataAvailable = false;               
 
 bool isMoreDataAvailable();
 byte *getNextBuffer();
