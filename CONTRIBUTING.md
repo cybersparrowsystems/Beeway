@@ -28,7 +28,7 @@ We welcome contributions in the following ways:
 ## Getting Started 🛠️
 
 1. **Fork the Repository**  
-   - Click the "Fork" button on the top right corner of the project page.
+   - Click the "Fork" button on the top right corner of the project page
 
 2. **Clone the Repository**  
    - Use the following command to clone your fork locally:  
