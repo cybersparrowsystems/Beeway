@@ -11,6 +11,8 @@ BeeWay is a cost-effective, AI-powered solution to mitigate human-elephant confl
 3. **Instant Alerts**: Real-time notifications via Telegram with images and timestamps.  
 4. **ESP-NOW Communication**: Low-latency data transfer between ESP32-CAM and ESP32.  
 5. **Scalable and Cost-Effective**: Easy deployment in remote areas using low-cost hardware.
+6. **Energy Efficient**: Optimized power consumption for long-term deployment.
+7. **Weather Resistant**: Designed for outdoor operation in forest environments.
 
 ---
 
@@ -136,7 +138,7 @@ To ensure the **BeeWay** project works seamlessly on the **ESP32-CAM** and **ESP
 8. **SoftwareSerial**  
    - **Package**: **SoftwareSerial**  
    - **Installation**:  
-     - This library allows serial communication on other pins if needed, but it’s typically not required for ESP32 (which has multiple hardware UARTs). However, if used, you can install it via **Sketch** > **Include Library** > **Manage Libraries**.
+     - This library allows serial communication on other pins if needed, but it's typically not required for ESP32 (which has multiple hardware UARTs). However, if used, you can install it via **Sketch** > **Include Library** > **Manage Libraries**.
 
 Make sure to install these packages to ensure that the **BeeWay** system works seamlessly with your ESP32-CAM and ESP32 devices. Also, ensure that you correctly configure the **hardware serial** and **software serial** as needed for the communication between the ESP32-CAM and other components.
 
@@ -215,5 +217,47 @@ This project is open-source and licensed under the **MIT License**.
 
 ---
 
-**BeeWay** ensures safer human-wildlife coexistence using cutting-edge technology while promoting conservation. 🌍🐘  
+**BeeWay** ensures safer human-wildlife coexistence using cutting-edge technology while promoting conservation. 🌍🐘⚡add  
+---
+
+## **Power Management 🔋**
+
+### **Power Consumption**
+- ESP32-CAM (Active): ~180mA
+- ESP32-CAM (Deep Sleep): ~6mA
+- PIR Sensor: ~65μA
+- DF Mini Player (Playing): ~20mA
+- DF Mini Player (Standby): ~10μA
+
+### **Power Optimization**
+1. **Deep Sleep Mode**
+   - ESP32-CAM enters deep sleep when no motion is detected
+   - Wake-up triggered by PIR sensor interrupt
+   
+2. **Solar Power Integration**
+   - Recommended solar panel: 5V/2A
+   - Battery capacity: 3.7V/5000mAh Li-ion
+   - Charge controller for battery protection
+
+---
+
+## **Troubleshooting Guide 🔧**
+
+### Common Issues and Solutions
+
+1. **ESP32-CAM Won't Connect**
+   - Check WiFi credentials
+   - Verify GPIO0 is properly connected for programming
+   - Reset board and try again
+
+2. **No Telegram Alerts**
+   - Verify bot token and chat ID
+   - Check internet connectivity
+   - Ensure proper ESP-NOW communication
+
+3. **Poor Detection Accuracy**
+   - Clean camera lens
+   - Adjust camera position
+   - Retrain model with more diverse dataset
+
 ---
